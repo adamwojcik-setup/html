@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ctrl + / - komentarz -->
+
+    <!-- nav#main-nav>ul>li*5>a -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="https://google.com">google.com</a></li> <!--odsyła do miejsca w necie - zewnętrzny-->
+            <li><a href="/kontakt">kontakt</a></li> <!--odsyła do miejsca w dokumencie - wewnętrzny-->
+            <li><a href="#footer">footer</a></li> <!--odsyła do miejsca w dokumencie - wewnętrzny-->
+            <li><a href="https://onet.pl" target="_blank">onet.pl</a></li> <!--idz do-->
+            <li><a href="mailto:setup.aw@gmail.com">napisz do mnie</a></li> <!--wyślij mail-->
+            <li><a href="tel:+48607936439">zadzwoń do mnir</a></li> <!--zadzwoń-->
+        </ul>
+    </nav>
+
+    <!-- table>(thead>tr>th*3)+(tbody>ttr>td*3)+(tfoot>tr>td*3) -->
+    <table>
+        <thead>
+            <tr>
+                <th>lp</th>
+                <th>nazwa</th>
+                <th>cena</th>
+                <th>rabat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>jabłka</td>
+                <td>5pln</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>gruszki</td>
+                <td>7pln</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>sliwki</td>
+                <td>9pln</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>RAZEM</td>
+                <td>21pln</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+<form action="" method="post"> <!--kontener na formularzu-->
+    <label for="name">podaj imię</label>
+    <input type="text" id="name" required> <!--mail-->
+    <input type="number"> <!--tylko numery-->
+   <input type="checkbox" name="" id=""> wyrażam zgodę na <br>
+   <input type="radio" name="gender" id="">kobieta <br>
+   <input type="radio" name="gender" id="">mezczyzna <br>
+   <textarea name="" id="" cmaxlenght="1"></textarea> <br>
+   <select name="select">
+    <option value="">choose option</option>
+    <option value="value1">Value 1</option>
+    <option value="value2">Value 2</option>
+    <option value="value3">Value 3</option>
+    </select>
+    <input type="submit"> <!--przycisk do wysłania-->
+</form>
+
+    <footer id="footer">
+        <p>lorem</p>
+    </footer>
+</body>
+</html>
